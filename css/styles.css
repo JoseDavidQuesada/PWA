@@ -1,0 +1,319 @@
+/** Estilos generales **/
+
+*{
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   font-family: 'Open Sans', Verdana;
+}
+body,html{
+
+overflow-x:hidden; 
+
+}
+body{
+
+	background: white;
+}
+
+.clearfix{
+
+	clear: both;
+	float: none;
+}
+
+.container{
+	width: 85%;
+	margin: 0px auto; /* para centrar un bloque */
+}
+
+/* caberera */
+
+#main-header{
+
+	background: white;
+	height: 100px;
+	line-height: 85px;
+}
+
+#logo{
+	width: 63%;
+	float: left;
+}
+
+#logo h1{
+
+	font-weight: bold; /* para que se vea en negrita */
+	font-size: 25px;
+	color: #FB314E;
+}
+
+#menu{
+
+	width: 380px;
+	float: left;
+}
+
+#menu ul li{
+	list-style: none;
+	float: left;
+	margin-left: 19px;
+	margin-right: 19px;
+}
+
+#menu ul li a{
+	color: black;
+}
+
+#menu ul li a:hover{
+	color: #FB314E;
+}
+
+/* slider */
+
+#slider{
+   height: 300px;
+   background: #FB314E;
+}
+#slider h2{
+
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	line-height: 290px;
+	text-shadow: 0px 0px 6px black; /* la sombra en el eje x que va a ver, distancia en el eje y, difuminado y color de la sombra */
+}
+
+/* Servicios */
+
+.subheader{
+	font-size: 34px;
+	color: #333;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}
+
+.service, .video{  /* LA PROPIEDAS LA UTILIZAN LOS SERVICIOS Y LOS VIDEOS */
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.service img{
+	height: 48px;
+	margin-bottom: 20px;
+}
+
+.service h3{
+	margin-bottom: 10px
+}
+
+.service p, .video p{
+	color:#444;
+	text-align: center;
+	display: block;
+	width: 80%;
+	margin:0px auto;
+}
+
+/* Videos */
+
+.video iframe{
+	width: 85%;
+	height:250px;
+}
+
+.video p{
+	margin-top: 20px;
+}
+
+/** footer */
+
+#footer{
+	background: #333;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	margin-top: 30px;
+	text-align: center;
+	color:white;
+}
+
+#footer .subheader{
+	color:white;
+}
+
+#networks{
+	display: block;
+	margin: 0px auto;
+	width: 216px;
+	list-style: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+}
+
+#networks li{
+	float:left;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 300ms;
+}
+
+#networks li:hover{
+	opacity: 0.8;
+	transform: scale(1.1,1.1);
+
+}
+
+/** ejemplo de como utilizar el media query
+https://developer.mozilla.org/es/docs/CSS/Media_queries
+
+@media all and (max-width: 1000px){
+
+	#main-header{
+		background: black;
+	}
+}
+**/
+
+@media all and (max-width: 1225px){
+	.container{
+		width: 95%;
+	}
+}
+
+@media all and (max-width: 1085px){
+
+	#main-header{
+    	height: 70px;
+    	line-height: 65px;
+	}
+
+	#logo{
+		width: 60%;
+
+	}
+
+
+/*
+	#logo{
+		width: 310px;
+		float: none;
+		margin: 0px auto ;
+	}
+
+	#menu{
+		float: none;
+		margin:0px auto;
+	}
+	*/
+}
+
+@media all and (max-width: 999px){
+
+	#logo{
+		width: 310px;
+		float: none;
+		margin: 0px auto ;
+	}
+
+	#menu{
+		float: none;
+		margin:0px auto;
+	}
+
+	#slider{
+		overflow: hidden;
+		height: 150px;
+	}
+
+	#slider h2{
+		font-size: 30px;
+		line-height: 30px;
+		margin-top: 50px;
+	}
+}
+
+
+@media all and (max-width: 780px){
+
+		.service, .video{  /* LA PROPIEDAS LA UTILIZAN LOS SERVICIOS Y LOS VIDEOS */
+		width: 70%;
+		text-align: center;
+		float: none;
+		margin:0px auto;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+		.service img{
+			margin-bottom: 10px;
+		}
+
+		.service p, .video p{
+			margin-top: 20px;
+		}
+
+	}
+
+@media all and (max-width: 600px){
+		.service, .video{  /* LA PROPIEDAS LA UTILIZAN LOS SERVICIOS Y LOS VIDEOS */
+		width: 90%;
+
+	     }
+		.video iframe{
+			width: 100%;
+			height:230px;
+		}
+}
+
+@media all and (max-width: 481px){
+	#slider h2{
+		font-size: 26px;
+		line-height: 30px;
+		margin-top: 50px;
+	}
+
+}
+
+
+
+@media all and (max-width: 400px){
+
+ 	#menu{
+ 		width: 100%;
+ 		text-align: center;
+ 	}
+
+	#menu ul li {
+	    margin-left: 4%;
+	    margin-right: 4%;
+ }
+	#slider h2{
+		margin-top: 42px;
+	}
+
+
+		.video iframe{
+			width: 90%;
+			height:190px;
+		}
+
+}
+
+@media all and (max-width: 377px){
+
+ 	#main-header{
+ 		height: auto;
+ 	}
+
+	#menu ul li {
+		float: none;
+ }
+
+}

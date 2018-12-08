@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+	<!-- Codificación de caracteres/tildes -->
+	<meta charset="utf-8"/>
+	<!-- Título de la web -->
+	<title>Curso PWA - Jose David Quesada</title>
+	<!-- Viewport Responsive configuracion para el resposive -->
+	<meta name="Viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Icono de la web-->
+	<link rel="shortcut icon" type="img/png" href="img/favicon.png"/>
+
+
+    <!--Confguracion de etiquetas para el PWA -->
+	<!--Color de la aplicacion -->
+    <meta name="theme-color" content="#FB314E"/>
+
+    <!-- optumizacion para telefono-->
+    <meta name="MObileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true" />
+
+    <!-- meta etiquetas PWA para Apple -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bac-style" content="black-translucent"/>
+    <link rel="apple-touch-icon" href="img/favicon.png"/>
+    <link rel="apple-touch-startup-image" href="img/favicon.png"/>
+    
+    <!-- Configuracion General PWA -->
+    <link rel="manifest" href="./manifest.json">
+
+
+
+
+	<!-- Estilos de la pagina-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<!-- jQuery -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="js/jquery-3.3.1.min"></script> 
+	<!--Scripts -->
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<header id="main-header">
+   <div class="container">
+	<div id="logo">
+		<h1>Jose David Quesada WEB</h1>
+	</div>	
+	<div id="menu">
+		<ul>
+			<li><a href="#main-header">Inicio</a></li>
+			<li><a href="#services">Servicios</a></li>
+			<li><a href="#videos">Videos</a></li>
+			<li><a href="#footer">Contacto</a></li>
+		</ul>
+	</div>	<!-- end menu -->
+  </div> <!-- end container -->
+</header><!-- end main-header -->
+
+  <div class="clearfix"></div><!--Limpiar flotados -->
+
+   <div id="slider">
+   		<div class="container">
+    		<h2>Desarrollador web y estudiante</h2>
+   		</div>
+   </div>
+
+   <div id="services">
+     <div class="container">
+   		<h2 class="subheader">Servicios</h2>
+
+    <div class="service">
+    	<img src="img/1.png"/>
+    	<h3>Desarrollo web</h3>
+    	<p>
+    		Ofrezco servicios de desarrollo web moderno con las mejores tecnologias web
+    	</p>
+    </div>
+
+        <div class="service">
+    	<img src="img/2.png"/>
+    	<h3>Diseno Web</h3>
+    	<p>
+    		Diseno de aplicaciones web limpio y atractivo para tus clientes
+    	</p>
+    </div>
+
+        <div class="service">
+    	<img src="img/3.png"/>
+    	<h3>Mentoria</h3>
+    	<p>
+    		Puedo ser tu mentor o profesor para ensenarte desarrollo y programacion web moderna
+    	</p>
+    </div>
+   </div><!-- end container --> 
+   </div> <!-- end services --> 
+
+   <div class="clearfix"></div> <!-- Este div  hace que lo que sigue despues no interprete el float left anterior-->
+                                <!--Gracias a las propiedades que utilizamops en el el css-->
+
+   <div id="videos">
+   	    <div class="container">
+   	    	<h2 class="subheader">Videos</h2>
+   	  		
+   	  		<div class="video">
+   	  			<iframe width="560" height="315" src="https://www.youtube.com/embed/-L82DQtw4sw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+   	  			</iframe>
+   	  			<p>
+   	  				Primer adelanto del álbum "VERSUS" de HARD GZ, preventa disponible el 9/11/2018
+					Canción en Spotify: https://open.spotify.com/track/4C6Jms...
+					Entradas para el concierto en Madrid (10/11/2018): https://hiphoptickets.es/entradas/har...
+   	  			</p>
+   	  		</div>
+
+   	  		<div class="video">
+   	  			<iframe width="560" height="315" src="https://www.youtube.com/embed/AnKdQ5p5Ks8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   	  			<p>
+   	  				Primer adelanto del álbum "VERSUS" de HARD GZ, preventa disponible el 9/11/2018
+					Canción en Spotify: https://open.spotify.com/track/4C6Jms...
+					Entradas para el concierto en Madrid (10/11/2018): https://hiphoptickets.es/entradas/har...
+   	  			</p>
+   	  		</div>
+
+   	  		<div class="video">
+   	  			<iframe width="560" height="315" src="https://www.youtube.com/embed/EmNwaoaTkiY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   	  			<p>
+   	  				StReAm "Juice" NOW 👉 https://atlantic.lnk.to/JuiceID thanks to Cris Cyborg for showing out!! JUICE FEAT YG MUSIC VIDEO
+   	  			</p>
+   	  		</div>   	  		
+
+        </div><!-- end container --> 
+   </div><!-- end videos --> 
+
+    <div class="clearfix"></div>
+
+   <footer id="footer">
+   	 <div class="container">
+   	 	<h2 class="subheader">Contacto</h2>
+   	 	<p>Enviame un mensaje en cualquier de estas redes sociales</p>
+
+   	 	<ul id="networks">
+   	 		<li>
+   	 			<a href="">
+   	 			   <img src="img/twitter.png"/>
+   	 		    </a>
+   	 		</li>
+
+   	 		<li>
+   	 			<a href="">
+   	 			   <img src="img/facebook.png"/>
+   	 		    </a>
+   	 		</li>
+
+   	 		<li>
+   	 			<a href="">
+   	 			   <img src="img/instagram.png"/>
+   	 		    </a>
+   	 		</li>
+   	 	</ul>
+    <div class="clearfix"></div> <!-- limpia los flotantes -->
+   	 </div>
+   </footer>
+
+</body>
+
+
+</html>
