@@ -37,12 +37,14 @@ self.addEventListener('install', e => {
 			  	  			  .then(() => {
 			  	  			  	self.skipWaiting();
 			  	  			  });
+
  
 			  })
 	  		  .catch(err => console.log('No se ha registrado el cache', err))
 	);
 });
- 
+
+
 // Evento activate
 // Que la app funcione sin conexión
 self.addEventListener('activate', e => {
@@ -88,3 +90,4 @@ self.addEventListener('fetch', e => {
 	);
  
 });
+
